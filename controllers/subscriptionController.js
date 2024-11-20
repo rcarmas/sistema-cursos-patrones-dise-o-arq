@@ -1,6 +1,6 @@
 const Subscription = require('../models/Subscription');
 const Course = require('../models/Course');
-const User = require('.../models/User');
+const User = require('../models/User');
 
 // Suscribir usuario a un curso
 exports.subscribeToCourse = async (req, res) => {

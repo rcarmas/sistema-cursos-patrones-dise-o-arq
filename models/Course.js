@@ -1,6 +1,6 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('./index');
-const User = require('../User');
+const User = require('./User');
 
 const Course = sequelize.define('Course', {
   id: { type: DataTypes.UUID, defaultValue: DataTypes.UUIDV4, primaryKey: true },

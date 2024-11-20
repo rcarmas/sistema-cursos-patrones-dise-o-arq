@@ -1,6 +1,6 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('./index');
-const User = require('.User');
+const User = require('./User');
 const Course = require('./Course');
 
 const Subscription = sequelize.define('Subscription', {
