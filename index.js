@@ -9,6 +9,7 @@ app.use(express.json());
 app.get('/', (req, res) => res.send('API de Sistema de Cursos'));
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/courses', require('./routes/courseRoutes'));
+app.use('/api/subscriptions', require('./routes/subscriptionRoutes'));
 
 // Sincronizar base de datos
 sequelize.sync().then(() => {
